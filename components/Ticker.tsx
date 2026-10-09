@@ -11,7 +11,11 @@ export default function Ticker({
 }) {
   return (
     <div className="bg-bazar-900 overflow-hidden py-2 text-white">
-      <MarqueeText>
+      <MarqueeText
+      direction="left"
+      duration={12}
+      className="w-full"
+      >
         {products.map((p, i) => (
           <span
             key={i}
