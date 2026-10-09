@@ -20,7 +20,6 @@ export interface Product {
   lastMonth: number;
   change: { dir: "up" | "down" | "flat"; pct: number };
   markets: MarketPrice[];
-
 }
 
 export interface Category {
@@ -44,11 +43,9 @@ async function fetchJson<T>(path: string): Promise<T> {
       });
       if (!res.ok) throw new Error(`API responded with ${res.status}`);
       return (await res.json()) as T;
-      
     } catch (err) {
       lastError = err;
     }
-
   }
   throw lastError ?? new Error("Failed to reach the BazarDor API");
 }
@@ -72,6 +69,7 @@ export async function getCategories(): Promise<Category[]> {
       count: typeof c.count === "number" ? c.count : 0,
     }));
   } catch {
+    // Fallback: derive categories from the products list
     const products = await getProducts();
     const map = new Map<string, Category>();
     for (const p of products) {

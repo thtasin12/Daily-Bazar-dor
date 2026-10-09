@@ -1,7 +1,6 @@
-import {betterAuth} from "better-auth"
-import { mongodbAdapter } from "better-auth/adapters/mongodb"
-
-import {getDb} from "@/lib/db"
+import { betterAuth } from "better-auth";
+import { mongodbAdapter } from "better-auth/adapters/mongodb";
+import { getDb } from "@/lib/db";
 
 export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL ?? "http://localhost:3000",
