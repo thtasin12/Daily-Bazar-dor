@@ -76,7 +76,7 @@ function FormInner() {
       <p className="mt-4 text-center text-sm text-gray-600">
         নতুন অ্যাকাউন্ট?{" "}
         <Link href="/signup" className="font-medium text-bazar-700 hover:underline">
-          নিবন্ধন করুন
+          সাইন আপ
         </Link>
       </p>
 
