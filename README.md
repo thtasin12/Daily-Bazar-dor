@@ -58,6 +58,4 @@ npm run dev
 - BASE: `https://api.api-store.workers.dev/api/bazardor` (alternative: `https://api.abcz.workers.dev/api/bazardor`)
 - Endpoints: `/products`, `/products?category=chal`, `/products/:id`, `/categories`, `/categories/:slug`
 
-## 📄 License
 
-This project is for educational purposes (Programming Hero Assignment).
