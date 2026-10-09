@@ -43,7 +43,7 @@ export default function Navbar({ categories, user }: NavbarProps) {
               </Link>
               <button
                 onClick={handleSignOut}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-gray-100 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-200 transition"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-gray-100 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-200 transition cursor-pointer"
               >
                 <LogOut className="w-4 h-4" />
                   সাইন আউট
@@ -53,13 +53,13 @@ export default function Navbar({ categories, user }: NavbarProps) {
             <>
               <Link
                 href="/signin"
-                className="rounded-lg border border-bazar-600 px-4 py-1.5 text-sm font-medium text-bazar-700 hover:bg-bazar-50 transition"
+                className="rounded-lg border border-bazar-600 px-4 py-1.5 text-sm font-medium text-bazar-700 hover:bg-bazar-50 transition cursor-pointer"
               >
                 সাইন ইন
               </Link>
               <Link
                 href="/signup"
-                className="rounded-lg bg-bazar-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-bazar-700 transition"
+                className="rounded-lg bg-bazar-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-bazar-700 transition cursor-pointer"
               >
                 সাইন আপ
               </Link>
