@@ -89,7 +89,7 @@ export default function SignUpForm() {
 
       <p className="mt-4 text-center text-sm text-gray-600">
         ইতিমধ্যে অ্যাকাউন্ট আছে?{" "}
-        <Link href="/signin" className="font-medium text-bazar-700 hover:underline">
+        <Link href="/signin" className="font-medium text-bazar-700 hover:underline cursor-pointer">
           লগইন করুন
         </Link>
       </p>
